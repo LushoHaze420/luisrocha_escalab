@@ -1,0 +1,110 @@
+:root {
+    --color-blanco: #ffffff;
+}
+
+body {
+font-family: "Comic Sans MS", cursive;;
+margin: 0;
+padding: 0;
+}
+
+header {
+background-color: #333;
+color: var(--color-blanco);
+padding: 10px;
+}
+
+h1:hover{
+color: rgb(237, 37, 37);
+}
+
+p:hover{
+font-weight: bold;
+}
+
+nav ul {
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+nav ul li {
+display: inline-block;
+margin-right: 10px;
+}
+
+
+.home {
+padding: 20px;
+background-image: url("img/home-background.jpg");
+background-repeat: no-repeat;
+width: 100%;
+height: 100vh; /* Establece la altura al 100% del viewport */
+background-position: center center;
+}   /*No pude mostrar la imagen completa */
+
+.nosotros{
+padding: 20px;
+background-image: url("img/us-background.jpg");
+background-repeat: no-repeat;
+width: 100%;
+height: 100vh; /* Establece la altura al 100% del viewport */
+background-position: center center;
+} /*No pude mostrar la imagen completa */
+
+
+
+.product {
+background-size: cover;
+justify-content: center;
+align-items: center;
+background-image: url("img/products-background.jpg");
+margin-bottom: 20px;
+padding: 20px;
+background-color: #31aedb;
+border-radius: 10px;
+animation: slideIn 0.5s ease-in-out;
+}
+
+.product img {
+width: 90%;
+max-width: 250px;
+}
+
+
+.addToCartBtn {
+background-color: #ff6600;
+color: var(--color-blanco);
+border: none;
+padding: 10px 20px;
+border-radius: 5px;
+cursor: pointer;
+}
+
+
+nav ul li a {
+text-decoration: none;
+animation: colorAnimation 4s infinite;
+}
+
+@keyframes colorAnimation {
+0%, 25% {
+    color: red;
+}
+25%, 50% {
+    color: blue;
+}
+50%, 75% {
+    color: green;
+}
+75%, 100% {
+    color: yellow;
+}
+}
+
+footer {
+background-color: #333;
+color: var(--color-blanco);
+padding: 10px;
+text-align: center;
+}
